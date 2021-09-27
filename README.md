@@ -1,3 +1,5 @@
+![Little Jake](./asset/jake.png)
+
 # Little Jake
 
 Little Jake is a command line interface to use Arcehage web API in Discord.
@@ -19,7 +21,7 @@ Unimplemented
 
 ## Usage
 
-###[prefix][invoke] [arg1] [arg2] [arg3]...
+### [prefix][invoke] [arg1] [arg2] [arg3]...
 
 prefix : '!'
 
