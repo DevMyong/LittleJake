@@ -1,0 +1,59 @@
+{
+  "token": "BLURRED",
+  "prefix": "!",
+  "usages": {
+    "alarm": [
+    ],
+    "auction": [
+    ],
+    "bond": [
+      "!bond server   (default server = Morpheus)"
+    ],
+    "help": [
+      "!help help | user | bond | ..."
+    ],
+    "monitor": [
+      "!monitor name@server   -on | -off ",
+      "\t\t-on\n",
+      "\t\t\t\tStart to monitor some users.\n",
+      "\t\t-off\n",
+      "\t\t\t\tStop to monitor some users.\n"
+    ],
+    "price": [
+      "!price item"
+    ],
+    "recipe": [
+      "!recipe item"
+    ],
+    "update": [
+      "!update   -head | -content"
+    ],
+    "user": [
+      "!user name@server   -stat | -save | -load | -diff | -history",
+      "\t\t-stat",
+      "\t\t\t\tShow detail status of user.",
+      "\t\t-save",
+      "\t\t\t\tLoad status of user.",
+      "\t\t-load  int (1~100, default=100)",
+      "\t\t\t\tShow detail status of user.",
+      "\t\t-diff  int (1~100, default=100)",
+      "\t\t\t\tCompare status of users.",
+      "\t\t-history string (name, server, union and expedition. default=all)",
+      "\t\t\t\tShow history of status of user."
+    ]
+  },
+  "validFlags": {
+    "monitor": {
+    },
+    "bond": {
+      "server": [
+        "누이",
+        "하제",
+        "다후타",
+        "모르페우스",
+        "랑그레이",
+        "환락"
+      ]
+    }
+  }
+}
