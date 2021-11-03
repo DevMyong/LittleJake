@@ -7,13 +7,13 @@ import (
 // [prefix][cmd] [arg1] [arg2] [arg3] ....
 
 type Context struct {
-	Session *discordgo.Session
+	Session   *discordgo.Session
 	Message   *discordgo.Message
 	inputArgs []string
 	Handler   *CommandHandler
 
 	// Args is actual Arguments parsed from inputArgs
-	Args    []string
+	Args []string
 	// FlagMap is actual Flags with parameter parsed from inputArgs
 	FlagMap map[string]string
 }

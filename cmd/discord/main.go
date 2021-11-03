@@ -3,16 +3,16 @@ package main
 import (
 	"fmt"
 	"github.com/bwmarrin/discordgo"
-	"jake/internal/discord/command"
-	"jake/internal/discord/config"
-	"jake/internal/discord/events"
+	"github.com/DevMyong/LittleJake/internal/discord/command"
+	"github.com/DevMyong/LittleJake/internal/discord/config"
+	"github.com/DevMyong/LittleJake/internal/discord/events"
 	"os"
 	"os/signal"
 	"syscall"
 )
 
 func main() {
-	const fileName = "../../config/config.json"
+	const fileName = "C:/Users/KD/Projects/LittleJake/config/config.json"
 
 	cfg, err := config.ParseConfigFromJSONFile(fileName)
 	if err != nil {

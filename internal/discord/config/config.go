@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-const FileName = "../../../config/config.json"
+const FileName = "C:/Users/KD/Projects/LittleJake/config/config.json"
 
 type Config struct {
 	Token  string              `json:"token"`

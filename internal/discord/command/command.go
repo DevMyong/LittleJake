@@ -1,6 +1,6 @@
 package command
 
-import "jake/internal/discord/config"
+import "github.com/DevMyong/LittleJake/internal/discord/config"
 
 type Commander interface {
 	Invokes() []string
