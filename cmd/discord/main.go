@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/bwmarrin/discordgo"
 	"github.com/DevMyong/LittleJake/internal/discord/command"
 	"github.com/DevMyong/LittleJake/internal/discord/config"
 	"github.com/DevMyong/LittleJake/internal/discord/events"
+	"github.com/bwmarrin/discordgo"
 	"os"
 	"os/signal"
 	"syscall"

@@ -1,7 +1,7 @@
 package command
 
 import (
-	"github.com/DevMyong/LittleJake/internal/config"
+	"github.com/DevMyong/LittleJake/internal/discord/config"
 	"strings"
 )
 

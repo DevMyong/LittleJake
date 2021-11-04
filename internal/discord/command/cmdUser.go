@@ -1,8 +1,8 @@
 package command
 
 import (
-	"archeage/pkg/bond"
 	"github.com/DevMyong/LittleJake/internal/discord/config"
+	"github.com/DevMyong/archeage/pkg/user"
 	"strings"
 )
 
@@ -48,7 +48,7 @@ func (u *UserInfo) ValidArgs() config.ArgPattern {
 	return u.validArgs
 }
 func (u *UserInfo) Exec(ctx *Context) (err error) {
-	_, err = archeage.GetUserInfo(ctx.Args, ctx.FlagMap)
+	_, err = user.GetUserInfo(ctx.Args, ctx.FlagMap)
 	if err != nil{
 		return
 	}
