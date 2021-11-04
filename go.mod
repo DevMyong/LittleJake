@@ -3,6 +3,7 @@ module github.com/DevMyong/LittleJake
 go 1.17
 
 require (
+	github.com/DevMyong/LittleJake v0.0.0-20211103111556-0dc47fb5bbbb // indirect
 	github.com/DevMyong/archeage v0.0.0-20211103104544-eebf6339727b // indirect
 	github.com/PuerkitoBio/goquery v1.8.0 // indirect
 	github.com/andybalholm/cascadia v1.3.1 // indirect

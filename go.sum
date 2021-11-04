@@ -1,3 +1,5 @@
+github.com/DevMyong/LittleJake v0.0.0-20211103111556-0dc47fb5bbbb h1:Phqa472ZM7l1uLRH9HpCbwg78L7mpEDSsOBiS/doGXA=
+github.com/DevMyong/LittleJake v0.0.0-20211103111556-0dc47fb5bbbb/go.mod h1:hcK4Agnn4+FrapmOa/zbUrMorazRomox2tVXl8gfVe8=
 github.com/DevMyong/archeage v0.0.0-20211103104544-eebf6339727b h1:EMIizXtmg/uN4sOQiyV4pXNbfg8fJ9N3lT8oJEzJ1c8=
 github.com/DevMyong/archeage v0.0.0-20211103104544-eebf6339727b/go.mod h1:56EgGbR39Lnqi+j76t9nFcfxZWEragklaHnOxeKxsjU=
 github.com/PuerkitoBio/goquery v1.8.0 h1:PJTF7AmFCFKk1N6V6jmKfrNH9tV5pNE6lZMkG0gta/U=
