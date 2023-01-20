@@ -1,58 +1,80 @@
 {
-  "token": "ODc5OTkzODg3MjYxODUxNjQ4.YSX0LA.CZsdRnPUPz3evRALbie62bhXN3M",
   "prefix": "!",
+  "invokes": {
+    "user": "u,user,유저",
+    "bond": "b,bond,채권",
+    "auth": "auth,authentication,인증",
+    "activityUsers": "dau,activity-users,활동유저",
+    "price": "p,price,시세,가격,시가",
+    "wiki": "w,wiki,위키",
+    "update": "news,업데이트",
+    "amigo": "amigo,아미고",
+    "recipe": "r,recipe,레시피",
+    "crops": "c,crops,작물",
+    "raid": "raid,레이드",
+    "auction": "a,auction,경매",
+    "auctionBid": "bid,입찰",
+    "auctionEnd": "a-end,auction-end,경매종료,경매끝"
+  },
   "usages": {
-    "alarm": [
-    ],
-    "auction": [
+    "user": [
+      "!user name@server   -stat | -history | -activity",
+      "\t\t-stat",
+      "\t\t\t\tShow detail status of user.",
+      "\t\t-history",
+      "\t\t\t\tShow history of status of user.",
+      "\t\t-activity",
+      "\t\t\t\tShow activity of user."
     ],
     "bond": [
-      "!bond server   (default server = Morpheus)"
+      "!bond server  -n 60",
+      "\t\t-range",
+      "\t\t\t\tSelect number of item [20, 60, 100]. (no option = 20)"
     ],
-    "help": [
-      "!help help | user | bond | ..."
+    "auth": [
+      "!auth name@server",
+      "\t\t1. Receive the code.",
+      "\t\t2. Login to `archeage.xlgames.com`",
+      "\t\t3. Write code to your board `https://archeage.xlgames.com/networks/xxxxxxxx`",
+      "\t\t   You have to check checkbox to your character",
+      "\t\t4. Wait a few minutes (maximum 3min)",
+      "\t\t5. Congrats, you are authenticated.",
+      "\t\t   If you don't, please try again."
     ],
-    "monitor": [
-      "!monitor name@server   -on | -off ",
-      "\t\t-on\n",
-      "\t\t\t\tStart to monitor some users.\n",
-      "\t\t-off\n",
-      "\t\t\t\tStop to monitor some users.\n"
+    "activityUsers": [
+      "!dau server@continent"
     ],
     "price": [
       "!price item"
     ],
-    "recipe": [
-      "!recipe item"
+    "wiki": [
+      "!Wiki anyting"
     ],
     "update": [
       "!update   -head | -content"
     ],
-    "user": [
-      "!user name@server   -stat | -save | -load | -diff | -history",
-      "\t\t-stat",
-      "\t\t\t\tShow detail status of user.",
-      "\t\t-save",
-      "\t\t\t\tLoad status of user.",
-      "\t\t-load  int (1~100, default=100)",
-      "\t\t\t\tShow detail status of user.",
-      "\t\t-diff  int (1~100, default=100)",
-      "\t\t\t\tCompare status of users.",
-      "\t\t-history string (name, server, union and expedition. default=all)",
-      "\t\t\t\tShow history of status of user."
+    "amigo": [
+      "!amigo"
+    ],
+    "recipe": [
+      "!recipe item"
+    ],
+    "auction": [
+      "Loren ipsum..."
     ]
   },
   "validFlags": {
-    "monitor": {
+    "user": {
     },
     "bond": {
       "server": [
-        "누이",
-        "하제",
-        "다후타",
-        "모르페우스",
-        "랑그레이",
-        "환락"
+        "NUI,누이",
+        "HAJE,하제",
+        "DAHUTA,다후타",
+        "MORPHEUS,모르페우스,몰페",
+        "RANGREI,랑그레이,랑그",
+        "EVERNIGHT,에버나이트,에버",
+        "DAEIOR,데이어"
       ]
     }
   }

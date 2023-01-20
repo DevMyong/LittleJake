@@ -14,7 +14,7 @@ func NewUserInfo() *UserInfo {
 		invokes:         []string{"user", "u", "정보"},
 		usage:           strings.Join(cfg.Usages["user"], "\n"),
 		isAdminRequired: false,
-		nArgs:       MinimumNArgs(1),
+		nArgs:           MinimumNArgs(1),
 		validFlags: config.FlagPattern{
 			"stat":    nil,
 			"save":    nil,
@@ -37,7 +37,7 @@ func (u *UserInfo) Description() string {
 func (u *UserInfo) IsAdminRequired() bool {
 	return u.isAdminRequired
 }
-func (u *UserInfo) NArgs(args []string) error{
+func (u *UserInfo) NArgs(args []string) error {
 	return u.nArgs(args)
 }
 
@@ -49,10 +49,9 @@ func (u *UserInfo) ValidArgs() config.ArgPattern {
 }
 func (u *UserInfo) Exec(ctx *Context) (err error) {
 	_, err = user.GetUserInfo(ctx.Args, ctx.FlagMap)
-	if err != nil{
+	if err != nil {
 		return
 	}
-
 
 	return
 }
