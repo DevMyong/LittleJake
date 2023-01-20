@@ -1,5 +1,3 @@
-github.com/DevMyong/LittleJake v0.0.0-20211103111556-0dc47fb5bbbb h1:Phqa472ZM7l1uLRH9HpCbwg78L7mpEDSsOBiS/doGXA=
-github.com/DevMyong/LittleJake v0.0.0-20211103111556-0dc47fb5bbbb/go.mod h1:hcK4Agnn4+FrapmOa/zbUrMorazRomox2tVXl8gfVe8=
 github.com/DevMyong/archeage v0.0.0-20211103104544-eebf6339727b h1:EMIizXtmg/uN4sOQiyV4pXNbfg8fJ9N3lT8oJEzJ1c8=
 github.com/DevMyong/archeage v0.0.0-20211103104544-eebf6339727b/go.mod h1:56EgGbR39Lnqi+j76t9nFcfxZWEragklaHnOxeKxsjU=
 github.com/PuerkitoBio/goquery v1.8.0 h1:PJTF7AmFCFKk1N6V6jmKfrNH9tV5pNE6lZMkG0gta/U=
@@ -10,6 +8,8 @@ github.com/bwmarrin/discordgo v0.23.2 h1:BzrtTktixGHIu9Tt7dEE6diysEF9HWnXeHuoJEt
 github.com/bwmarrin/discordgo v0.23.2/go.mod h1:c1WtWUGN6nREDmzIpyTp/iD3VYt4Fpx+bVyfBG7JE+M=
 github.com/gorilla/websocket v1.4.0 h1:WDFjx/TMzVgy9VdMMQi2K2Emtwi2QcUQsztZ/zLaH/Q=
 github.com/gorilla/websocket v1.4.0/go.mod h1:E7qHFY5m1UJ88s3WnNqhKjPHQ0heANvMoAMk2YaljkQ=
+github.com/joho/godotenv v1.4.0 h1:3l4+N6zfMWnkbPEXKng2o2/MR5mSwTrBih4ZEkkz1lg=
+github.com/joho/godotenv v1.4.0/go.mod h1:f4LDr5Voq0i2e/R5DDNOoa2zzDfwtkZa6DnEwAbqwq4=
 golang.org/x/crypto v0.0.0-20181030102418-4d3f4d9ffa16 h1:y6ce7gCWtnH+m3dCjzQ1PCuwl28DDIc3VNnvY29DlIA=
 golang.org/x/crypto v0.0.0-20181030102418-4d3f4d9ffa16/go.mod h1:6SG95UA2DQfeDnfUPMdvaQW0Q7yPrPDi9nlGo2tz2b4=
 golang.org/x/net v0.0.0-20210916014120-12bc252f5db8 h1:/6y1LfuqNuQdHAm0jjtPtgRcxIxjVZgm5OTu8/QhZvk=
