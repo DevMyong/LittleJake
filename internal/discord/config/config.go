@@ -2,6 +2,9 @@ package config
 
 import (
 	"encoding/json"
+	"fmt"
+	"github.com/joho/godotenv"
+	"log"
 	"os"
 )
 
@@ -26,4 +29,11 @@ func ParseConfigFromJSONFile(fileName string) (c *Config, err error) {
 	err = json.NewDecoder(f).Decode(c)
 
 	return
+}
+
+func LoadEnv() {
+	if err := godotenv.Load(); err != nil {
+		log.Fatalln("Failed to load .env file")
+	}
+	fmt.Println("Success to load .env file")
 }

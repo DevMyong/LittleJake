@@ -12,6 +12,7 @@ import (
 )
 
 func main() {
+	config.LoadEnv()
 	const fileName = "C:/Users/KD/Projects/LittleJake/config/config.json"
 
 	cfg, err := config.ParseConfigFromJSONFile(fileName)
