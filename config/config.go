@@ -8,7 +8,29 @@ import (
 	"os"
 )
 
-const FileName = "C:/Users/KD/Projects/LittleJake/config/config.json"
+const FileName = "./config.json"
+
+type Config struct {
+	Token  string              `json:"token"`
+	Prefix string              `json:"prefix"`
+	Usages map[string][]string `json:"usages"`
+}
+
+type FlagPattern map[string][]string
+type ArgPattern []string
+
+var Token string
+
+func Init() {
+	loadEnv()
+}
+
+func init() {
+	cfg, err := ParseConfigFromJSONFile(FileName)
+	if err != nil {
+		panic(err)
+	}
+}
 
 type Config struct {
 	Token  string              `json:"token"`
@@ -31,7 +53,7 @@ func ParseConfigFromJSONFile(fileName string) (c *Config, err error) {
 	return
 }
 
-func LoadEnv() {
+func loadEnv() {
 	if err := godotenv.Load(); err != nil {
 		log.Fatalln("Failed to load .env file")
 	}

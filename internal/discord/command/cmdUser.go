@@ -1,7 +1,7 @@
 package command
 
 import (
-	"github.com/DevMyong/LittleJake/internal/discord/config"
+	"github.com/DevMyong/LittleJake/config"
 	"github.com/DevMyong/archeage/pkg/user"
 	"strings"
 )

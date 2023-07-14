@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
+	"github.com/DevMyong/LittleJake/config"
 	"github.com/DevMyong/LittleJake/internal/discord/command"
-	"github.com/DevMyong/LittleJake/internal/discord/config"
 	"github.com/DevMyong/LittleJake/internal/discord/events"
 	"github.com/bwmarrin/discordgo"
 	"os"
@@ -11,16 +11,12 @@ import (
 	"syscall"
 )
 
+func init() {
+	config.Init()
+}
+
 func main() {
-	config.LoadEnv()
-	const fileName = "C:/Users/KD/Projects/LittleJake/config/config.json"
-
-	cfg, err := config.ParseConfigFromJSONFile(fileName)
-	if err != nil {
-		panic(err)
-	}
-
-	s, err := discordgo.New("Bot " + cfg.Token)
+	s, err := discordgo.New("Bot " + config.Token)
 	if err != nil {
 		panic(err)
 	}

@@ -1,7 +1,7 @@
 package command
 
 import (
-	"github.com/DevMyong/LittleJake/internal/discord/config"
+	"github.com/DevMyong/LittleJake/config"
 	"strings"
 )
 
@@ -14,6 +14,6 @@ func NewHelp() *Help {
 		usage:           strings.Join(cfg.Usages["help"], "\n"),
 		description:     "It shows how to use the Jake and command.",
 		isAdminRequired: false,
-		validArgs: []string{"help", "user"},
+		validArgs:       []string{"help", "user"},
 	}
 }
